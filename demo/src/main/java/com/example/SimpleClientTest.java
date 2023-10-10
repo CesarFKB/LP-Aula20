@@ -27,6 +27,7 @@ public class SimpleClientTest {
     }
 
     private static void iniciaCliente() throws IOException {
+        // 10.33.126.151
         cliente = new Socket(SimpleServerTest.ENDERECO, SimpleServerTest.PORTA);
         System.out.println("Cliente: " +
         SimpleServerTest.ENDERECO + ":" +

@@ -1,4 +1,4 @@
-package main.java.com.example;
+package com.example;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -28,7 +28,7 @@ public class SimpleClientTest {
 
     private static void iniciaCliente() throws IOException {
         // 10.33.126.151
-        cliente = new Socket(SimpleServerTest.ENDERECO, SimpleServerTest.PORTA);
+        cliente = new Socket("10.33.126.151", SimpleServerTest.PORTA);
         System.out.println("Cliente: " +
         SimpleServerTest.ENDERECO + ":" +
         SimpleServerTest.PORTA + " conectado ao servidor!");
